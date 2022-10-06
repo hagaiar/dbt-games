@@ -1,0 +1,54 @@
+
+
+============================== 2022-10-06 08:18:35.807719 | 3f24656e-aafc-4bdd-afd9-8f80ec118625 ==============================
+[0m08:18:35.807727 [info ] [MainThread]: Running with dbt=1.2.1
+[0m08:18:35.807956 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/hagaya/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m08:18:35.808034 [debug] [MainThread]: Tracking: tracking
+[0m08:18:35.818039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b71760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b71b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b9afd0>]}
+[0m08:19:59.236714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b71370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b710a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b71f40>]}
+[0m08:19:59.238509 [debug] [MainThread]: Flushing usage events
+[0m08:20:00.118008 [error] [MainThread]: Encountered an error:
+
+[0m08:20:00.119570 [error] [MainThread]: Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/dbt-postgres/1.2.1/libexec/lib/python3.9/site-packages/dbt/main.py", line 129, in main
+    results, succeeded = handle_and_check(args)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.2.1/libexec/lib/python3.9/site-packages/dbt/main.py", line 191, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.2.1/libexec/lib/python3.9/site-packages/dbt/main.py", line 238, in run_from_args
+    results = task.run()
+  File "/opt/homebrew/Cellar/dbt-postgres/1.2.1/libexec/lib/python3.9/site-packages/dbt/task/init.py", line 307, in run
+    project_name = self.get_valid_project_name()
+  File "/opt/homebrew/Cellar/dbt-postgres/1.2.1/libexec/lib/python3.9/site-packages/dbt/task/init.py", line 264, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+  File "/opt/homebrew/Cellar/dbt-postgres/1.2.1/libexec/lib/python3.9/site-packages/click/termui.py", line 166, in prompt
+    value = prompt_func(prompt)
+  File "/opt/homebrew/Cellar/dbt-postgres/1.2.1/libexec/lib/python3.9/site-packages/click/termui.py", line 149, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+
+
+============================== 2022-10-06 08:20:06.011253 | b3c20623-0997-438f-88b3-102e45b8b740 ==============================
+[0m08:20:06.011259 [info ] [MainThread]: Running with dbt=1.2.1
+[0m08:20:06.011471 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/hagaya/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m08:20:06.011545 [debug] [MainThread]: Tracking: tracking
+[0m08:20:06.019343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104983640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104996460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104996ee0>]}
+[0m08:20:10.545896 [debug] [MainThread]: Starter project path: /opt/homebrew/Cellar/dbt-postgres/1.2.1/libexec/lib/python3.9/site-packages/dbt/include/starter_project
+[0m08:20:15.411943 [info ] [MainThread]: 
+Your new dbt project "playground" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m08:20:15.412278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104983a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104983640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049830d0>]}
+[0m08:20:15.412455 [debug] [MainThread]: Flushing usage events
